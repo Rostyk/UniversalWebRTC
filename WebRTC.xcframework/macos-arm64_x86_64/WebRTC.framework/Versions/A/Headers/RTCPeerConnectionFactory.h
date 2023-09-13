@@ -51,6 +51,12 @@ RTC_OBJC_EXPORT
             decoderFactory:(nullable id<RTC_OBJC_TYPE(RTCVideoDecoderFactory)>)decoderFactory
                audioDevice:(nullable id<RTC_OBJC_TYPE(RTCAudioDevice)>)audioDevice;
 
+- (void)setHttpsProxy:(NSString *)userAgent
+            proxyHost:(NSString *)proxyHost
+            proxyPort:(int) proxyPort 
+            username:(NSString *)username
+            password:(NSString *)password;
+
 /** Initialize an RTCAudioSource with constraints. */
 - (RTC_OBJC_TYPE(RTCAudioSource) *)audioSourceWithConstraints:
     (nullable RTC_OBJC_TYPE(RTCMediaConstraints) *)constraints;
