@@ -99,7 +99,7 @@ RTC_OBJC_EXPORT
                     (id<RTC_OBJC_TYPE(RTCSSLCertificateVerifier)>)certificateVerifier
                            delegate:(nullable id<RTC_OBJC_TYPE(RTCPeerConnectionDelegate)>)delegate;
 
-- (void)setProxyType:(int)proxyType;
++ (void)setProxyType:(int)proxyType;
 
 /** Set the options to be used for subsequently created RTCPeerConnections */
 - (void)setOptions:(nonnull RTC_OBJC_TYPE(RTCPeerConnectionFactoryOptions) *)options;
