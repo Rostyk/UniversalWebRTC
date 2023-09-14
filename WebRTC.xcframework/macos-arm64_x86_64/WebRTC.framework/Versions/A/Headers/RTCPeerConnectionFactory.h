@@ -51,12 +51,6 @@ RTC_OBJC_EXPORT
             decoderFactory:(nullable id<RTC_OBJC_TYPE(RTCVideoDecoderFactory)>)decoderFactory
                audioDevice:(nullable id<RTC_OBJC_TYPE(RTCAudioDevice)>)audioDevice;
 
-- (void)setHttpsProxy:(NSString *)userAgent
-            proxyHost:(NSString *)proxyHost
-            proxyPort:(int) proxyPort 
-            username:(NSString *)username
-            password:(NSString *)password;
-
 /** Initialize an RTCAudioSource with constraints. */
 - (RTC_OBJC_TYPE(RTCAudioSource) *)audioSourceWithConstraints:
     (nullable RTC_OBJC_TYPE(RTCMediaConstraints) *)constraints;
@@ -104,6 +98,8 @@ RTC_OBJC_EXPORT
                 certificateVerifier:
                     (id<RTC_OBJC_TYPE(RTCSSLCertificateVerifier)>)certificateVerifier
                            delegate:(nullable id<RTC_OBJC_TYPE(RTCPeerConnectionDelegate)>)delegate;
+
+- (void)setProxyType:(int)proxyType;
 
 /** Set the options to be used for subsequently created RTCPeerConnections */
 - (void)setOptions:(nonnull RTC_OBJC_TYPE(RTCPeerConnectionFactoryOptions) *)options;
