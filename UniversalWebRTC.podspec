@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "UniversalWebRTC"
-  s.version      = "112.0.35"
+  s.version      = "112.0.36"
   s.summary      = "WebRTC Universal framework for macOS and iOS"
   s.homepage     = "https://webrtc.org"
   s.license      = { :type => "MIT", :file => "LICENSE" }
