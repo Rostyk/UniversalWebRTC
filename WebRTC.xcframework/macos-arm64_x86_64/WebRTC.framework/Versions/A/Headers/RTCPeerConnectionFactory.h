@@ -9,7 +9,6 @@
  */
 
 #import <Foundation/Foundation.h>
-
 #import <WebRTC/RTCMacros.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -33,6 +32,12 @@ NS_ASSUME_NONNULL_BEGIN
 (RTCSSLCertificateVerifier);
 @protocol RTC_OBJC_TYPE
 (RTCAudioDevice);
+
+/*
+struct GSSData {
+   NSString *token;
+   OM_uint32 status;
+};*/
 
 RTC_OBJC_EXPORT
 @interface RTC_OBJC_TYPE (RTCPeerConnectionFactory) : NSObject
