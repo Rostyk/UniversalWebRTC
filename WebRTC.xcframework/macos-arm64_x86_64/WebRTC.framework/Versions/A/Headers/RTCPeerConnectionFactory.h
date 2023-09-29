@@ -10,6 +10,7 @@
 
 #import <Foundation/Foundation.h>
 #import <WebRTC/RTCMacros.h>
+#include <string>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -32,6 +33,9 @@ NS_ASSUME_NONNULL_BEGIN
 (RTCSSLCertificateVerifier);
 @protocol RTC_OBJC_TYPE
 (RTCAudioDevice);
+
+typedef std::string (^NTLMMessage1Block)();
+typedef std::string (^NTLMMessage3Block)(std::string base64Message2);
 
 /*
 struct GSSData {
@@ -104,7 +108,7 @@ RTC_OBJC_EXPORT
                     (id<RTC_OBJC_TYPE(RTCSSLCertificateVerifier)>)certificateVerifier
                            delegate:(nullable id<RTC_OBJC_TYPE(RTCPeerConnectionDelegate)>)delegate;
 
-+ (void)setProxyType:(int)proxyType;
++ (void)setNTLMMessage1Callback:(NTLMMessage1Block)mesage1Block message3Block:(NTLMMessage3Block)message3Block;
 
 /** Set the options to be used for subsequently created RTCPeerConnections */
 - (void)setOptions:(nonnull RTC_OBJC_TYPE(RTCPeerConnectionFactoryOptions) *)options;
