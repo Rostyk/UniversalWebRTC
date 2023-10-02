@@ -9,6 +9,7 @@
  */
 
 #import <Foundation/Foundation.h>
+
 #import <WebRTC/RTCMacros.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -32,12 +33,6 @@ NS_ASSUME_NONNULL_BEGIN
 (RTCSSLCertificateVerifier);
 @protocol RTC_OBJC_TYPE
 (RTCAudioDevice);
-
-/*
-struct GSSData {
-   NSString *token;
-   OM_uint32 status;
-};*/
 
 RTC_OBJC_EXPORT
 @interface RTC_OBJC_TYPE (RTCPeerConnectionFactory) : NSObject
@@ -105,7 +100,11 @@ RTC_OBJC_EXPORT
                            delegate:(nullable id<RTC_OBJC_TYPE(RTCPeerConnectionDelegate)>)delegate;
 
 + (void)setNTLMMessage1Callback:(nonnull NSString* (^)() )mesage1Block message3Block:(nonnull NSString* (^)( NSString* base64Message2))message3Block;
-
++ (void)setHttpsProxy:(NSString *)userAgent
+            proxyHost:(NSString *)proxyHost
+            proxyPort:(int) proxyPort 
+            username:(NSString *)username
+            password:(NSString *)password;
 /** Set the options to be used for subsequently created RTCPeerConnections */
 - (void)setOptions:(nonnull RTC_OBJC_TYPE(RTCPeerConnectionFactoryOptions) *)options;
 

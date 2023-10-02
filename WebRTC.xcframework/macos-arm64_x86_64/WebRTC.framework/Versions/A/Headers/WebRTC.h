@@ -75,7 +75,6 @@
 #import <WebRTC/RTCCameraVideoCapturer.h>
 #import <WebRTC/RTCFileVideoCapturer.h>
 #import <WebRTC/RTCMTLNSVideoView.h>
-#import <WebRTC/RTCNSGLVideoView.h>
 #import <WebRTC/RTCVideoViewShading.h>
 #import <WebRTC/RTCCodecSpecificInfoH264.h>
 #import <WebRTC/RTCDefaultVideoDecoderFactory.h>
