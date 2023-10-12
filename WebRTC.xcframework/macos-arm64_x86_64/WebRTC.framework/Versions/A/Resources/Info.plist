@@ -23,7 +23,7 @@
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTSDKBuild</key>
-	<string>13.1</string>
+	<string>21E226</string>
 	<key>DTSDKName</key>
 	<string>macosx13.1</string>
 	<key>DTXcode</key>
