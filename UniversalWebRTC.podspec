@@ -7,5 +7,6 @@ Pod::Spec.new do |s|
   s.author       = { 'Rostyslav Stepanyak' => 'rstepanyak@screenmeet.com' }
   s.source       = { :git => 'https://github.com/Rostyk/UniversalWebRTC.git', :tag => s.version.to_s }
   s.osx.deployment_target = '10.13'
+  s.ios.deployment_target = '13.0'
   s.vendored_frameworks = "WebRTC.xcframework"
 end
