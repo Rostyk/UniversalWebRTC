@@ -8,6 +8,7 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
+#import <WebRTC/RTCAudioDevice.h>
 #import <WebRTC/RTCAudioSource.h>
 #import <WebRTC/RTCAudioTrack.h>
 #import <WebRTC/RTCCertificate.h>
